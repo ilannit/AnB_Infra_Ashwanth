@@ -16,12 +16,13 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'Services', href: '#services' },
-    { name: 'Portfolio', href: '#portfolio' },
-    { name: 'Team', href: '#team' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Home', href: '/#home' },
+    { name: 'About', href: '/#about' },
+    { name: 'Services', href: '/#services' },
+    { name: 'Pricing', href: '/#pricing' },
+    { name: 'Portfolio', href: '/#portfolio' },
+    { name: 'Team', href: '/#team' },
+    { name: 'Contact', href: '/#contact' },
   ];
 
   return (
@@ -32,7 +33,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <a href="#" className="text-2xl font-serif font-bold tracking-tighter text-stone-900">
+            <a href="/#home" className="text-2xl font-serif font-bold tracking-tighter text-stone-900">
               {COMPANY_INFO.name}
               <span className="block text-[10px] font-sans font-medium tracking-widest text-gold-600 uppercase">
                 {COMPANY_INFO.tagline}
