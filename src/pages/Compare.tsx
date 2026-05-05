@@ -96,22 +96,18 @@ export default function Compare() {
                   <th className="p-6 bg-stone-100 border-b border-r border-stone-200 text-stone-900 font-serif font-bold text-lg sticky left-0 z-10 w-1/4">
                     Feature Overview
                   </th>
-                  <th className="p-6 bg-stone-50 border-b border-r border-stone-200 text-center w-[18.75%]">
-                    <div className="text-xl font-bold text-stone-900 mb-1">Basic</div>
-                    <div className="text-gold-600 font-medium">₹1,899/sq.ft</div>
-                  </th>
-                  <th className="p-6 bg-gold-50/50 border-b border-r border-gold-200 text-center relative w-[18.75%]">
+                  <th className="p-6 bg-gold-50/50 border-b border-r border-gold-200 text-center relative w-1/4">
                     <div className="absolute top-0 left-1/2 -translate-x-1/2 bg-gold-500 text-white text-[10px] font-bold px-3 py-0.5 rounded-b-md tracking-wider uppercase">
                       Most Popular
                     </div>
                     <div className="text-xl font-bold text-stone-900 mb-1 mt-2">Standard</div>
                     <div className="text-gold-600 font-medium">₹2,199/sq.ft</div>
                   </th>
-                  <th className="p-6 bg-stone-50 border-b border-r border-stone-200 text-center w-[18.75%]">
+                  <th className="p-6 bg-stone-50 border-b border-r border-stone-200 text-center w-1/4">
                     <div className="text-xl font-bold text-stone-900 mb-1">Premium</div>
                     <div className="text-gold-600 font-medium">₹2,549/sq.ft</div>
                   </th>
-                  <th className="p-6 bg-stone-100 border-b border-stone-200 text-center w-[18.75%]">
+                  <th className="p-6 bg-stone-100 border-b border-stone-200 text-center w-1/4">
                     <div className="text-xl font-bold text-stone-900 mb-1">Luxury</div>
                     <div className="text-gold-600 font-medium">₹2,899/sq.ft</div>
                   </th>
@@ -122,7 +118,7 @@ export default function Compare() {
                   <React.Fragment key={catIdx}>
                     {/* Category Header */}
                     <tr>
-                      <td colSpan={5} className="p-4 bg-stone-900 text-white font-medium uppercase tracking-wider text-sm sticky left-0 z-10">
+                      <td colSpan={4} className="p-4 bg-stone-900 text-white font-medium uppercase tracking-wider text-sm sticky left-0 z-10">
                         {category.name}
                       </td>
                     </tr>
@@ -132,13 +128,6 @@ export default function Compare() {
                       <tr key={itemIdx} className="hover:bg-stone-50 transition-colors">
                         <td className="p-5 border-b border-r border-stone-200 font-medium text-stone-700 sticky left-0 bg-white z-10">
                           {item.feature}
-                        </td>
-                        <td className="p-5 border-b border-r border-stone-200 text-center text-stone-600 text-sm">
-                          {typeof item.basic === 'boolean' ? (
-                            item.basic ? <Check className="mx-auto text-green-500" size={20} /> : <Minus className="mx-auto text-stone-300" size={20} />
-                          ) : (
-                            item.basic
-                          )}
                         </td>
                         <td className="p-5 border-b border-r border-gold-100 bg-gold-50/10 text-center text-stone-900 font-medium text-sm">
                           {typeof item.standard === 'boolean' ? (

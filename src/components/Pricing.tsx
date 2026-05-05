@@ -4,21 +4,6 @@ import { Link } from 'react-router-dom';
 
 const PACKAGES = [
   {
-    name: 'Basic',
-    price: '₹1,899',
-    unit: '/ sq.ft',
-    description: 'Essential construction with reliable materials.',
-    features: [
-      'Any ISI-certified steel & cement brands',
-      'M20 RCC design mix · 9.5 ft ceiling height · Upto 2 ft basement',
-      "2'×2' floor tiles ₹45/sqft · Parking ₹35/sqft",
-      'Basic Ready-made Teak main door · Aluminium 2-track windows',
-      '2-coat ISI emulsion interior & exterior paint',
-      'Any ISI switches & wires · PVC bathroom door',
-    ],
-    highlighted: false,
-  },
-  {
     name: 'Standard',
     price: '₹2,199',
     unit: '/ sq.ft',
@@ -80,7 +65,7 @@ export default function Pricing() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {PACKAGES.map((pkg, index) => (
             <motion.div
               key={index}
