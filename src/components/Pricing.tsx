@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const PACKAGES = [
   {
     name: 'Standard',
-    price: '₹2,199',
+    price: '₹2,299',
     unit: '/ sq.ft',
     description: 'Upgraded materials and finishing for modern homes.',
     features: [
@@ -21,7 +21,7 @@ const PACKAGES = [
   },
   {
     name: 'Premium',
-    price: '₹2,549',
+    price: '₹2,649',
     unit: '/ sq.ft',
     description: 'Premium quality with branded fittings and spacious feel.',
     features: [
@@ -37,7 +37,7 @@ const PACKAGES = [
   },
   {
     name: 'Luxury',
-    price: '₹2,899',
+    price: '₹2,999',
     unit: '/ sq.ft',
     description: 'The ultimate luxury experience with top-tier brands.',
     features: [

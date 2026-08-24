@@ -101,15 +101,15 @@ export default function Compare() {
                       Most Popular
                     </div>
                     <div className="text-xl font-bold text-stone-900 mb-1 mt-2">Standard</div>
-                    <div className="text-gold-600 font-medium">₹2,199/sq.ft</div>
+                    <div className="text-gold-600 font-medium">₹2,299/sq.ft</div>
                   </th>
                   <th className="p-6 bg-stone-50 border-b border-r border-stone-200 text-center w-1/4">
                     <div className="text-xl font-bold text-stone-900 mb-1">Premium</div>
-                    <div className="text-gold-600 font-medium">₹2,549/sq.ft</div>
+                    <div className="text-gold-600 font-medium">₹2,649/sq.ft</div>
                   </th>
                   <th className="p-6 bg-stone-100 border-b border-stone-200 text-center w-1/4">
                     <div className="text-xl font-bold text-stone-900 mb-1">Luxury</div>
-                    <div className="text-gold-600 font-medium">₹2,899/sq.ft</div>
+                    <div className="text-gold-600 font-medium">₹2,999/sq.ft</div>
                   </th>
                 </tr>
               </thead>
